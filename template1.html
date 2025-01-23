@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500&family=Playfair+Display:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Template-1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Playfair Display", serif;
+      }
+
+      .container {
+        max-width: 1700px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        padding: 4rem 5rem;
+      }
+
+      .floral-image {
+        flex: 1;
+        max-width: 50%;
+      }
+
+      .floral-image img {
+        width: 50%;
+
+        object-fit: contain;
+      }
+
+      .wedding-details {
+        flex: 1;
+        text-align: center;
+      }
+
+      .title {
+        color: #4b6aa9;
+        margin-bottom: 0.5rem;
+      }
+
+      .title h1 {
+        font-size: 4rem;
+        font-weight: 400;
+      }
+
+      .title h1 span {
+        font-family: "Great Vibes", cursive;
+        font-size: 5rem;
+      }
+
+      .ceremony {
+        color: #4b6aa9;
+        font-size: 1.75rem;
+        letter-spacing: 0.2em;
+        margin-bottom: 2rem;
+      }
+
+      .names-container {
+        position: relative;
+        padding: 2rem 0;
+        margin: 2rem 0;
+      }
+
+      .names-container::before,
+      .names-container::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: #4b6aa9;
+        opacity: 0.3;
+      }
+
+      .names-container::before {
+        top: 0;
+      }
+
+      .names-container::after {
+        bottom: 0;
+      }
+
+      .names {
+        font-family: "Great Vibes", cursive;
+        color: #e0447b;
+        font-size: 4rem;
+        line-height: 1.2;
+      }
+
+      .date-time {
+        color: #e0447b;
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: 0.1em;
+        line-height: 1.6;
+      }
+
+      .date-time p {
+        font-size: 1.25rem;
+      }
+      .flower img {
+        height: 400px;
+      }
+      .flower-wed img {
+        height: 500px;
+      }
+      h1 {
+        font-family: "Great Vibes", cursive;
+      }
+      .about {
+        width: 50%;
+      }
+      .story {
+        width: 50%;
+      }
+      .form-div{
+        width: 33%;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="section-1">
+      <div class="container">
+        <div class="floral-image">
+          <img src="./assets/c2.png" />
+        </div>
+        <div class="wedding-details">
+          <div class="title">
+            <h1><span>W</span>EDDING</h1>
+          </div>
+          <div class="ceremony">CEREMONY</div>
+          <div class="names-container">
+            <div class="names">Bride & Groom</div>
+          </div>
+          <div class="date-time">
+            <p class="">APRIL 25TH, 2025</p>
+            <p>| 7:00 PM |</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-2">
+      <div class="bg-blue-200 px-8 py-4 flex justify-between items-center">
+        <div class="flex flex-col gap-24 pl-32">
+          <div class="flex flex-col items-center gap-2">
+            <h1 class="text-6xl">Save the Date</h1>
+            <h2 class="text-2xl">APRIL 25TH, 2025</h2>
+            <p class="text-xl border-l-2 inline border-r-2 px-2 border-red-600">
+              7:00 PM
+            </p>
+          </div>
+          <div class="flex flex-col items-center">
+            <h3 class="text-2xl">VENUE</h3>
+            <h3 class="text-2xl">VENUE NAME HERE</h3>
+          </div>
+        </div>
+
+        <div>
+          <img src="./assets/c3.png" alt="" />
+        </div>
+
+        <div>
+          <h1 class="text-6xl">Bride</h1>
+          <span class="text-5xl">&</span>
+          <h1 class="text-6xl">Groom</h1>
+        </div>
+
+        <div class="flower">
+          <img class="" src="./assets//c2.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="section-3">
+      <div class="flex py-8 px-24 justify-between">
+        <div class="flex flex-col about items-center gap-4">
+          <h1 class="text-6xl">About Us</h1>
+          <p class="text-center">
+            Hi there! We’re [Your Name] & [Partner’s Name], two souls who found
+            each other and have been building a lifetime of love ever since. Our
+            journey began [insert how/where you met], and what started as [a
+            spark/a friendship/an adventure] has grown into a deep and enduring
+            connection. Together, we’ve shared laughter, challenges, dreams, and
+            countless unforgettable moments that have brought us closer each
+            day.
+          </p>
+          <p class="text-center">
+            We’re so excited to celebrate this next chapter of our love story
+            with the people who mean the most to us—our family and friends. Your
+            love, support, and blessings have shaped our lives in more ways than
+            we can express, and having you by our side as we say “I do” makes
+            this day even more special.
+          </p>
+          <h2>[Your Name] & [Partner’s Name]</h2>
+        </div>
+        <div class="flower">
+          <img src="./assets//c2.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section id="section-4">
+      <div class="flex justify-between items-center px-40 py-8">
+        <div class="flower">
+          <img src="./assets/c2.png" alt="" />
+        </div>
+        <div class="story flex flex-col items-center gap-4">
+          <h1 class="text-6xl">Our Story</h1>
+          <h2 class="text-center text-2xl text-blue-700">
+            It all began [insert where and how you met]. What seemed like [a
+            casual encounter/destiny/a perfect coincidence] quickly turned into
+            something unforgettable. From the very beginning, we knew there was
+            something special about our connection.
+          </h2>
+        </div>
+      </div>
+    </section>
+    <section id="section-5">
+      <div class="flex justify-between items-center px-24 py-16 bg-blue-200">
+        <div class="flower-wed">
+          <img src="./assets/c2.png" alt="" />
+        </div>
+        <div class="about flex flex-col items-center gap-6">
+          <h1 class="text-6xl text-pink-600">Wedding Programs</h1>
+          <div class="space-y-2 flex flex-col items-center">
+            <h2 class="text-3xl text-pink-600">Monday, 21ST APRIL, 2025</h2>
+            <h3 class="text-xl text-blue-600">Event-1 NAME - TIME</h3>
+            <h3 class="text-xl text-blue-600">Event-2 NAME - TIME</h3>
+            <h2 class="text-xl text-pink-700">VENUE: VENUE NAME HERE</h2>
+          </div>
+          <div class="space-y-2 flex flex-col items-center">
+            <h2 class="text-3xl text-pink-600">Monday, 21ST APRIL, 2025</h2>
+            <h3 class="text-xl text-blue-600">Event-1 NAME - TIME</h3>
+            <h3 class="text-xl text-blue-600">Event-2 NAME - TIME</h3>
+            <h2 class="text-xl text-pink-700">VENUE: VENUE NAME HERE</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-6">
+      <div class="flex justify-between px-40 py-16">
+        <div class="flex flex-col items-center">
+          <h1 class="text-6xl">Event Name</h1>
+          <div class="space-y-2 flex flex-col items-center">
+            <h2 class="text-3xl text-pink-800">Monday, 21ST APRIL, 2025</h2>
+            <h3 class="text-xl text-blue-600">Event-1 NAME - TIME</h3>
+            <h3 class="text-xl text-blue-600">Event-2 NAME - TIME</h3>
+            <h3 class="text-xl text-blue-600">Event-3 NAME - TIME</h3>
+            <img class="w-20" src="./assets/c5.jpg" alt="" />
+            <h2 class="text-xl text-pink-800">VENUE: VENUE NAME HERE</h2>
+          </div>
+        </div>
+        <div class="flower">
+          <img src="./assets/c2.png" alt="" />
+        </div>
+        <div class="flex flex-col items-center">
+          <h1 class="text-6xl">Event Name</h1>
+          <div class="space-y-2 flex flex-col items-center">
+            <h2 class="text-3xl text-pink-800">Monday, 21ST APRIL, 2025</h2>
+            <h3 class="text-xl text-blue-600">Event-1 NAME - TIME</h3>
+            <h3 class="text-xl text-blue-600">Event-2 NAME - TIME</h3>
+            <h3 class="text-xl text-blue-600">Event-3 NAME - TIME</h3>
+            <img class="w-20" src="./assets/c5.jpg" alt="" />
+            <h2 class="text-xl text-pink-800">VENUE: VENUE NAME HERE</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-7">
+      <div class="flex items-center justify-between py-16 px-40">
+        <div class="flower">
+          <img src="./assets/c2.png" alt="" />
+        </div>
+        <div>
+          <h1 class="text-6xl text-pink-800">
+            Wedding <br />
+            Timeline
+          </h1>
+        </div>
+        <div>
+          <div class="">
+            <h2 class="text-3xl text-pink-600">Monday, 21ST APRIL, 2025</h2>
+            <h3 class="text-xl text-blue-600">Event-1 NAME - TIME</h3>
+            <h3 class="text-xl text-blue-600">Event-2 NAME - TIME</h3>
+            <h3 class="text-xl text-blue-600">Event-3 NAME - TIME</h3>
+          </div>
+          <div class="">
+            <h2 class="text-3xl text-pink-600">Monday, 21ST APRIL, 2025</h2>
+            <h3 class="text-xl text-blue-600">Event-1 NAME - TIME</h3>
+            <h3 class="text-xl text-blue-600">Event-2 NAME - TIME</h3>
+            <h3 class="text-xl text-blue-600">Event-3 NAME - TIME</h3>
+          </div>
+          <div class="">
+            <h2 class="text-3xl text-pink-600">Monday, 21ST APRIL, 2025</h2>
+            <h3 class="text-xl text-blue-600">Event-1 NAME - TIME</h3>
+            <h3 class="text-xl text-blue-600">Event-2 NAME - TIME</h3>
+            <h3 class="text-xl text-blue-600">Event-3 NAME - TIME</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-8">
+      <div class="py-10 space-y-4 px-40 bg-blue-200">
+        <h2 class="text-4xl text-center text-pink-600">WEDDING VENUE</h2>
+        <div class="flex justify-between">
+          <div class="flower">
+            <img src="./assets/c2.png" alt="" />
+          </div>
+          <div class="flex flex-col justify-between items-center">
+            <h2 class="text-3xl text-center text-blue-700">
+              123, FULL ADRRESS, LANDMARK, <br />
+              CITY, STATE - PIN
+            </h2>
+            <img class="w-48" src="./assets/c6.jpg" alt="" />
+          </div>
+          <div class="flower">
+            <img src="./assets/c2.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-9">
+      <div class="flex items-center justify-between px-40 py-16">
+        <div class="flower">
+          <img src="./assets/c2.png" alt="" />
+        </div>
+        <div class="flex flex-col gap-8 items-center">
+          <div class="flex flex-col items-center">
+            <h2 class="text-3xl text-pink-600">AWAITING YOUR PRESENSE</h2>
+            <h3 class="text-2xl">EDIT NAME HERE 1</h3>
+            <h3 class="text-2xl">EDIT NAME HERE 2</h3>
+            <h3 class="text-2xl">EDIT NAME HERE 3</h3>
+          </div>
+          <div class="flex flex-col items-center">
+            <h2 class="text-3xl text-pink-600">Our Residence</h2>
+            <h3 class="text-2xl text-center">123, Full Address Landmark <br> City, state - -Pincode</h3>
+          </div>
+          <div class="flex flex-col items-center">
+            <h2 class="text-3xl text-pink-600">Contact Numbers</h2>
+            <h3 class="text-2xl">+91 XXXXXXXXXX</h3>
+          </div>
+        </div>
+        <div class="flower">
+            <img src="./assets/c2.png" alt="" />
+          </div>
+      </div>
+    </section>
+    <section id="section-10">
+        <div class="flex justify-between items-center px-40 py-16 bg-blue-200">
+            <div class="flower">
+                <img src="./assets/c2.png" alt="">
+            </div>
+            <div>
+                <h2 class="text-4xl text-center text-pink-800">Your presence will make our <br> wedding day even more meaningful <br> and unforgettable</h2>
+            </div>
+            <div class="flower">
+                <img src="./assets/c2.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="section-11">
+        <div class="py-16 px-24 space-y-4">
+            <h1 class="text-6xl text-pink-800 text-center">Photo Gallery</h1>
+            <div class="flex gap-8 justify-center">
+                <img class="w-64" src="./assets/wed1.jpg" alt="">
+                <img class="w-64" src="./assets/wed2.jpg" alt="">
+                <img class="w-64" src="./assets/wed3.jpg" alt="">
+                <img class="w-64" src="./assets/wed4.jpg" alt="">
+            </div>
+            <h2 class="text-2xl text-pink-800 text-center">Celebration Summary</h2>
+        </div>
+    </section>
+    <section id="section-12">
+        <div class="px-24 py-16">
+            <h2 class="text-6xl text-center text-pink-800">RSVP</h2>
+            <form action="" class="px-40 space-y-4">
+                <div class="flex gap-4">
+                    <div class="flex flex-col gap-2 form-div">
+                        <label class="text-xl" for="">Full Name</label>
+                        <input class="border-2 px-1 py-2 rounded-md" type="text" placeholder="Enter you name">
+                    </div>
+                    <div class="flex flex-col gap-2 form-div">
+                        <label class="text-xl" for="">Full Address</label>
+                        <input class="border-2 px-1 py-2 rounded-md" type="text" placeholder="Enter you address">
+                    </div>
+                    <div class="flex flex-col gap-2 form-div">
+                        <label class="text-xl" for="">Mobile Number</label>
+                        <input class="border-2 px-1 py-2 rounded-md" type="text" placeholder="Enter you number">
+                    </div>
+                </div>
+                <div class="flex gap-2">
+                    <label class="text-xl" for="">Response:</label>
+                    <input type="checkbox">Accept with pleasure</input>
+                </div>
+                <button class="text-pink-800 text-xl border-2 px-24 py-2 hover:bg-pink-500 hover:text-black duration-300">Submit</button>
+            </form>
+        </div>
+    </section>
+    <section id="section-13">
+        <div class="flex flex-col gap-8 justify-center items-center">
+            <h1 class="text-6xl text-blue-700">Creating Special For Special Day</h1>
+            <img src="./assets/c4.png" alt="">
+            <h2 class="text-4xl">NYOUTA.COM</h2>
+        </div>
+    </section>
+  </body>
+</html>
